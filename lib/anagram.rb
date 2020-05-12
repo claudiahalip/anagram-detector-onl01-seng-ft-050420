@@ -10,7 +10,7 @@ class Anagram
   def match(array_posible_words)
     word = self.word
     array_posible_words.keep_if { |anagram|
-       word.split.sort == anagram.split.sort}
+       word.split(//).sort == anagram.split(//).sort}
        
         
   end
